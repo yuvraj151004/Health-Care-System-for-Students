@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave Permissions - Healthcare System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .header {
+            background: #333;
+            padding: 15px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            flex: 1;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background: #007bff;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background: #f2f2f2;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 8px 15px;
+            background: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .download-btn:hover {
+            background: #218838;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .back-btn:hover {
+            background: #0056b3;
+        }
+
+        /* Footer */
+        .footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: auto;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">Leave Permissions</div>
+
+    <div class="container">
+        <h2>Your Leave Permissions</h2>
+
+        <table>
+            <tr>
+                <th>Leave Type</th>
+                <th>Start Date</th>
+                <th>End Date</th>
+                <th>Doctor</th>
+                <th>Download</th>
+            </tr>
+            <tr>
+                <td>Sick Leave</td>
+                <td>Feb 10, 2025</td>
+                <td>Feb 15, 2025</td>
+                <td>Dr. Jain</td>
+                <td><a href="leave/sick_leave.pdf" class="download-btn" download>Download</a></td>
+            </tr>
+            <tr>
+                <td>Medical Rest Leave</td>
+                <td>Jan 5, 2025</td>
+                <td>Jan 20, 2025</td>
+                <td>Dr. Patel</td>
+                <td><a href="leave/medical_rest.pdf" class="download-btn" download>Download</a></td>
+            </tr>
+            <tr>
+                <td>COVID-19 Quarantine Leave</td>
+                <td>Dec 1, 2024</td>
+                <td>Dec 14, 2024</td>
+                <td>Dr. Yadav</td>
+                <td><a href="leave/covid_quarantine.pdf" class="download-btn" download>Download</a></td>
+            </tr>
+        </table>
+
+        <a href="documents.html" class="back-btn">Back to documents</a>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2025 Healthcare Management System | 
+            <a href="#">Privacy Policy</a> | 
+            <a href="#">Terms of Service</a>
+        </p>
+    </div>
+
+</body>
+</html>
